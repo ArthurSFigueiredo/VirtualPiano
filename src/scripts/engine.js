@@ -9,14 +9,6 @@ const playSound = (key) => {
     audio.src = `src/sounds/${key}.wav`
     audio.play();
 
-// const clickedKey = document.querySelector(`[data-key="${key}]"`)
-//     if (clickedKey) {
-//         clickedKey.classList.add("active");
-//         setTimeout(() => {
-//             clickedKey.classList.remove("active");
-//         }, 150)
-//     }
-
 const clickedKey =document.querySelector(`[data-key="${key}"]`);
 clickedKey.classList.add("active");
 setTimeout(()=>{
